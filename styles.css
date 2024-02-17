@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Hanken Grotesk", sans-serif;
+    }
+
+    body {
+      background-color: hsl(221, 100%, 96%);
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card__component {
+      width: 736px;
+      display: flex;
+      background-color: white;
+      border-radius: 2rem;
+      position: relative;
+    }
+
+    .card__result {
+      width: 368px;
+      flex: 1;
+      background: linear-gradient(to top, #2F2CE9, #6943FF);
+      border-radius: 2rem;
+    }
+
+    .card__result-title {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 35px 0 38px;
+      color: #CAC9FF;
+    }
+
+    .card__result-score {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, rgba(77, 33, 201, 1), rgba(37, 33, 201, 0));
+      margin: 0 auto 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .score__number {
+      color: white;
+      font-size: 72px;
+      font-weight: 800;
+    }
+
+    .score__total {
+      color: #CAC9FF;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card__result-comment {
+      width: 260px;
+      margin: 0 auto;
+    }
+
+    .commet__title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .comment__text {
+      color: #CAC9FF;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .card__summary {
+      padding: 2rem;
+    }
+
+    .summary__title {
+      font-size: 1.5rem;
+      margin-bottom: 28px;
+    }
+
+    .summary__content {
+      width: 288px;
+      list-style: none;
+      padding: 0 1rem;
+      margin-bottom: 41px;
+    }
+
+    .summary__content-item {
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .summary__content-item:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .content__name {
+      display: flex;
+    }
+
+    .icon {
+      margin-right: 1rem;
+    }
+
+    .reaction-text {
+      color: hsl(0, 100%, 67%);
+    }
+
+    .memory-text {
+      color: hsl(39, 100%, 56%);
+    }
+
+    .verbal-text {
+      color: hsl(166, 100%, 37%);
+    }
+
+    .visual-text {
+      color: hsl(234, 85%, 45%);
+    }
+
+    .card__summary-button {
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      width: 288px;
+      height: 56px;
+      border: none;
+      background-color: #303B59;
+      border-radius: 128px;
+      margin: 0 auto;
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .attribution a {
+      text-decoration: none;
+      font-weight: 600;
+      color: hsl(234, 85%, 45%);
+    }
+
+    @media only screen and (max-width: 425px) {
+
+      .container {
+        justify-content: start;
+
+      }
+
+      .card__component {
+        width: 375px;
+        flex-direction: column;
+      }
+
+      .card__result {
+        width: 375px;
+        border-radius: 0 0 2rem 2rem;
+      }
+
+      .card__result-title {
+        font-size: 18px;
+        margin: 24px 0 24px;
+      }
+
+      .card__result-score {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 24px;
+      }
+
+      .score__number {
+        font-size: 56px;
+        font-weight: 800;
+      }
+
+      .score__total {
+        color: #CAC9FF;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .commet__title {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+
+      .comment__text {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .card__summary {
+        padding: 24px 30px 30px 30px;
+      }
+
+      .summary__title {
+        margin-bottom: 24px;
+      }
+
+      .summary__content {
+        width: 315px;
+        margin: 0 0 24px;
+      }
+
+      .card__summary-button {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        width: 315px;
+      }
+
+      .attribution {
+        position: absolute;
+        left: 0;
+        transform: translateX(0);
+        top: 824px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
