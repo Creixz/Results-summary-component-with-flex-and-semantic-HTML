@@ -100,8 +100,27 @@
     .summary__content {
       width: 288px;
       list-style: none;
-      padding: 0 1rem;
       margin-bottom: 41px;
+    }
+
+    .reaction {
+      background-color: hsla(0, 100%, 95%, 1)
+    }
+
+    .memory {
+      background-color: hsla(60, 100%, 95%, 1);
+    }
+
+    .verbal {
+      background-color: hsla(120, 100%, 95%, 1);
+    }
+
+    .visual {
+      background-color: hsla(240, 100%, 95%, 1);
+    }
+
+    .text {
+      font-weight: 600;
     }
 
     .summary__content-item {
@@ -109,6 +128,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 1rem;
+      border-radius: 12px;
 
     }
 
@@ -150,6 +171,11 @@
       background-color: #303B59;
       border-radius: 128px;
       margin: 0 auto;
+    }
+
+    .card__summary-button:hover {
+      cursor: pointer;
+      background: linear-gradient(to top, #2F2CE9, #6943FF);
     }
 
     .attribution {
